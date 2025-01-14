@@ -366,7 +366,8 @@ Adjust various settings related to the app display.
 
 ### JSON Properties
 
-You can adjust each property in the JSON object according to your preferences. Including a property is optional.
+You can adjust each property in the JSON object according to your preferences. Including a property is optional. 
+✔ Please note, that all keynames are case sensitiv.
 
 | Key           | Type                      | Description                                                                                         | Value Range                                        | Default |
 | ------------- | ------------------------- | --------------------------------------------------------------------------------------------------- | -------------------------------------------------- | ------- |
