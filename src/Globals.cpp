@@ -60,8 +60,10 @@ void loadDevSettings()
         {
             if (DEBUG_MODE)
                 DEBUG_PRINTLN(F("Failed to read dev settings"));
+            DEV_JSON = "error";
             return;
         }
+        DEV_JSON = "ok";
 
         if (DEBUG_MODE)
             DEBUG_PRINTF("%i dev settings found", doc.size());
@@ -234,6 +236,7 @@ void loadDevSettings()
     }
     else
     {
+        DEV_JSON = "missing";
         if (DEBUG_MODE)
             DEBUG_PRINTLN("Devsettings not found");
     }
@@ -463,3 +466,4 @@ int WEB_PORT = 80;
 OverlayEffect GLOBAL_OVERLAY = NONE;
 String HOSTNAME = "";
 bool BUZ_VOL = false;
+String DEV_JSON = "";
