@@ -195,10 +195,10 @@ public:
         if (hidden)
             key += "-hidden";
 
-        // Univoque key name
+        // Unique key name
         if (key.equals("param-box"))
         {
-            key += numOptions;
+            key = key + "-" + val;
         }
         if (key.equals("raw-javascript"))
         {
